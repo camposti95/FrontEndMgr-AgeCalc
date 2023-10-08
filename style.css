@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: rgb(224, 224, 224);
+}
+.container {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    background-color: white;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 30px;
+    border-bottom-right-radius: 240px;
+}
+.top-box {
+    display: flex;
+    gap: 1.5rem;
+}
+.top-box label {
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.top-box input {
+    font-size: 38px;
+    font-weight: 700;
+    width: 150px;
+    height: 70px;
+    padding-left: 1rem;
+    border-radius: 15px;
+}
+small {
+    color: red;
+}
+.divider {
+    display: flex;
+    justify-content: end;
+}
+.circle {
+    background-color: hsl(259, 100%, 65%);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+}
+.circle:hover {
+    background-color: hsl(259, 56%, 51%);
+}
+.divider::after {
+    flex: 1;
+    content: '';
+    height: 2px;
+    width: 550px;
+    margin-top: 25px;
+    background-color: rgb(224, 224, 224);
+}
+.middle-box {
+    display: flex;
+}
+.material-symbols-outlined {
+    color: white;
+    font-size: 48px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'OPSZ' 48
+}
+.birthday-text {
+    text-align: center;
+    color: hsl(259, 100%, 65%);
+    font-size: 40px;
+    font-weight: bold;
+}
+.result-number {
+    color: hsl(259, 100%, 65%);
+}
+.result {
+    font-size: 70px;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 0.2rem;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 860px) {
+    .box {
+        width: 650px;
+    }
+    .divider {
+        width: 450px;
+    }
+}
+@media (max-width: 690px) {
+    .box {
+        width: 300px;
+        height: 800px;
+        padding: 10px;
+    }
+    .top-box {
+        justify-content: space-between;
+        gap: 0;
+    }
+    .top-box input {
+        width: 70px;
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    .divider {
+        width: 200px;
+    }
+}

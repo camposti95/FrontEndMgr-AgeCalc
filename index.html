@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="container">
+    <form>
+      <div class="box">
+        <div class="top-box">
+          <label for="day" id="day-label">Day<input type="text" placeholder="DD" id="day" required>
+            <small class="day-small"></small>
+          </label>
+          <label for="month" id="month-label">Month<input type="text" placeholder="MM" id="month" required>
+            <small class="month-small"></small>
+          </label>
+          <label for="year" id="year-label">Year<input type="text" placeholder="YYYY" id="year" required>
+            <small class="year-small"></small>
+          </label>
+        </div>
+        <div class="middle-box">
+          <div class="divider">
+            <button class="circle submit" type="submit">
+              <span class="material-symbols-outlined">stat_minus_2</span>
+            </button>
+          </div>
+          <button class="circle refresh" type="reset">
+            <span class="material-symbols-outlined">refresh</span>
+          </button>
+        </div>
+        <div class="bottom-box">
+          <h3 class="birthday-text"></h3>
+          <div class="result"><span class="result-number years" data-val="0">--</span> years</div>
+          <div class="result"><span class="result-number months" data-val="0">--</span> months</div>
+          <div class="result"><span class="result-number days" data-val="0">--</span> days</div>
+        </div>
+      </div>
+  </form>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Tim Campos</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
